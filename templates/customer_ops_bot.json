@@ -1,0 +1,57 @@
+{
+  "template_id": "customer-ops-bot",
+  "version": "1.2.1",
+  "kind": "customer-ops",
+  "purpose": "可复用的客户经营 Bot：把 {{business_name}} 的新客按阶段推进，触达受静默时段与频次上限约束，无响应按期升级给 {{owner_name}}。",
+  "copy": {
+    "zh": {
+      "greeting": "您好，我是 {{business_name}} 的 {{owner_name}}。",
+      "first_touch": "{{business_name}}：给您留了一份{{entry_stage}}专属说明，需要我发您吗？",
+      "follow_up": "上次给您留的资料还在，要不要我用 2 分钟陪您走一遍？",
+      "escalation": "这条客户已 {{escalation_days}} 天无响应，转人工跟进。",
+      "opt_out_ack": "已记录，不再打扰。"
+    },
+    "en": {
+      "greeting": "Hi, this is {{owner_name}} from {{business_name}}.",
+      "first_touch": "{{business_name}}: I saved a short guide for new {{entry_stage}} guests. Shall I send it?",
+      "follow_up": "I kept that starter guide for you - want me to walk you through it in 2 minutes?",
+      "escalation": "No reply for {{escalation_days}} days; handing over to a human.",
+      "opt_out_ack": "Noted - you will not be contacted again."
+    }
+  },
+  "playbook": [
+    {
+      "step": 1,
+      "id": "welcome",
+      "trigger": "进入 {{entry_stage}}",
+      "goal": "确认身份与需求，不推销"
+    },
+    {
+      "step": 2,
+      "id": "activate",
+      "trigger": "停留 {{cadence_hours|hours}}（按阶段递增）后",
+      "goal": "给一次明确的小动作（发资料/约体验）"
+    },
+    {
+      "step": 3,
+      "id": "nurture",
+      "trigger": "仍无响应",
+      "goal": "换角度复述价值，不复读原文"
+    },
+    {
+      "step": 4,
+      "id": "escalate",
+      "trigger": "{{escalation_days}} 天无响应",
+      "goal": "转 {{owner_name}}（{{owner_email}}）"
+    }
+  ],
+  "guardrails": {
+    "quiet_hours": "{{quiet_hours|window}} 时段内不发（时区 {{timezone}}）",
+    "daily_cap": "单客单日最多 {{daily_cap}} 次",
+    "weekly_cap": "单客单周最多 {{weekly_cap}} 次",
+    "opt_out": "客户回复 {{opt_out_keyword}} 立即永久停止",
+    "data_scope": "只读{{data_scope|label}}",
+    "retention": "互动记录保留 {{retention_days}} 天",
+    "tone": "语气档位{{brand_tone|label}}，语言{{language|label}}"
+  }
+}

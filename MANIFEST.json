@@ -1,0 +1,124 @@
+{
+ "package": "customer-ops-bot-template",
+ "module": "客户经营 Bot 模板",
+ "files": 22,
+ "total_bytes": 76041,
+ "python": "3.9+（仅标准库）",
+ "verified_on": [
+  "Windows 11 / Python 3.11.7",
+  "Ubuntu 24.04 / Python 3.12.3"
+ ],
+ "tests": 105,
+ "manifest": [
+  {
+   "path": "FIELDS.md",
+   "bytes": 1878,
+   "sha256": "c9b4179340296fa81c8f89ad8d0e7f8ac047a00f32ff22163546d4c8f628bb14"
+  },
+  {
+   "path": "README.md",
+   "bytes": 3232,
+   "sha256": "b402b71fa4f7ca3dd764c53d8be45ecf86867408cad0d412555f3cb7ef1a39d7"
+  },
+  {
+   "path": "SETUP.md",
+   "bytes": 2848,
+   "sha256": "cfd91bf14f7d85c3c73b3ce06d1f9dbe0eab225e92ed5bf2101ba35217bd315e"
+  },
+  {
+   "path": "USER_GUIDE.md",
+   "bytes": 3382,
+   "sha256": "898529324953402a444e66c8e166de899dc1c2f3d8b837b6e4e6431ec1ec5519"
+  },
+  {
+   "path": "VERIFICATION.md",
+   "bytes": 5044,
+   "sha256": "a1895d23e83a280fbc23cda34199dcb3851df68541b73ff6f6cab26fc7eaad10"
+  },
+  {
+   "path": "botkit/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "botkit/cli.py",
+   "bytes": 4368,
+   "sha256": "89d296dc13cc20d2eed7c95ab5f5b668f78ea4c78a2c2407cc4669baf8218b08"
+  },
+  {
+   "path": "botkit/render.py",
+   "bytes": 5533,
+   "sha256": "255f4dd5f7d722e86d4762a97693e02c2fde18a5521a6dd2897374bf3b6d0d4b"
+  },
+  {
+   "path": "botkit/schema.py",
+   "bytes": 3599,
+   "sha256": "9eda15b4ad9e7b7543ca4f41ef247b7fb63aff447d1a60a4dd9959593f7bc795"
+  },
+  {
+   "path": "botkit/simulate.py",
+   "bytes": 4417,
+   "sha256": "c1d8fa9ceb9be1faaff0f246050a4df930440c175f495cea989567059a9f0381"
+  },
+  {
+   "path": "botkit/tzutil.py",
+   "bytes": 1926,
+   "sha256": "0a9e4795a68b06ee0ef248ee9d918d52e91f9c924e11f7170728423439f84c12"
+  },
+  {
+   "path": "botkit/validate.py",
+   "bytes": 6030,
+   "sha256": "9327631e3d46b3f7043f0e36f5ba5ccc94ca0b4c9784a934b4db1ffd0d530049"
+  },
+  {
+   "path": "instances/example_params.json",
+   "bytes": 469,
+   "sha256": "9cb5729f83dbc2f6b6ce710d750f226dd0118b87a1c56e776717054c246e41df"
+  },
+  {
+   "path": "run.py",
+   "bytes": 184,
+   "sha256": "b5c768f8922ecc47f9eb43e23d107cf9353df9498379e8519c61bf85529870b4"
+  },
+  {
+   "path": "templates/customer_ops_bot.json",
+   "bytes": 2346,
+   "sha256": "d38f0fd9d3eba335bb0e414badfeb586bed921880541c5eb4263328d9c8bedd6"
+  },
+  {
+   "path": "test_all.py",
+   "bytes": 620,
+   "sha256": "28a1824a81aaa5f1032b45cbe5efda2cf52168c5eb3379ef7d530caecc44c46f"
+  },
+  {
+   "path": "tests/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/fixtures/bad_params.json",
+   "bytes": 499,
+   "sha256": "54ff16cf07627cc3d484b3803d1a5cd80a6d43676ce4b41fa52faa275df8d338"
+  },
+  {
+   "path": "tests/test_botkit.py",
+   "bytes": 23508,
+   "sha256": "d634aa2294a9ef6d343a506563299637323d333a22077583c164383c0a4c23a8"
+  },
+  {
+   "path": "tools/gen_fields.py",
+   "bytes": 1741,
+   "sha256": "b4f3141bf20c4d505834a1dd0d0e6f4d99f2ee78cea84fd25be4e16ed6201832"
+  },
+  {
+   "path": "tools/make_manifest.py",
+   "bytes": 1824,
+   "sha256": "3b9315ef48f7efd1a4554c89b54eafb326cf251417f6f176801d2265b990adf9"
+  },
+  {
+   "path": "tools/verify.py",
+   "bytes": 2593,
+   "sha256": "6d9589d50ab4d74c31cc89ef66d5602e6844a35daa58833393d9c96f58bc6721"
+  }
+ ]
+}

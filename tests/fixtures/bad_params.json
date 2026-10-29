@@ -1,0 +1,31 @@
+{
+ "business_name": "青柠健身",
+ "owner_name": "李敏",
+ "owner_email": "limin(at)example.com",
+ "timezone": "Asia/Shanghai",
+ "brand_tone": "friendly",
+ "quiet_hours": [
+  9,
+  9
+ ],
+ "daily_cap": 2,
+ "weekly_cap": 6,
+ "stages": [
+  "新客",
+  "体验",
+  "成交",
+  "复购"
+ ],
+ "entry_stage": "流失",
+ "cadence_hours": [
+  24,
+  72,
+  168
+ ],
+ "escalation_days": 7,
+ "opt_out_keyword": "STOP",
+ "language": "zh",
+ "retention_days": 365,
+ "data_scope": "contact_only",
+ "dailly_cap": 3
+}
